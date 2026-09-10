@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Template.Service.BusinessModel\Template.Service.BusinessModel.csproj" />
+    <ProjectReference Include="..\Template.Service.BusinessLogic.Interfaces\Template.Service.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\Template.Service.Services.Interfaces\Template.Service.Services.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
+

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Template.Service.BusinessModel\Template.Service.BusinessModel.csproj" />
+    <ProjectReference Include="..\Template.Service.DataModel\Template.Service.DataModel.csproj" />
+  </ItemGroup>
+
+</Project>
+

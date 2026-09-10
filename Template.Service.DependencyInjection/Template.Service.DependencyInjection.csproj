@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.Logger\Framework.Logger.csproj" />
+    <ProjectReference Include="..\Template.Service.BusinessLogic\Template.Service.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Template.Service.BusinessLogic.Interfaces\Template.Service.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\Template.Service.Services.Interfaces\Template.Service.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Template.Service.Services\Template.Service.Services.csproj" />
+  </ItemGroup>
+
+</Project>
+

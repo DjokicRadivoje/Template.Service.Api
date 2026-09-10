@@ -1,0 +1,31 @@
+# Visual Studio and user-specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET build output
+**/bin/
+**/obj/
+TestResults/
+artifacts/
+
+# Local logs and runtime files
+logs/
+*.log
+
+# Local configuration and secret material
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+secrets.json
+*.pfx
+*.p12
+*.pem
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db

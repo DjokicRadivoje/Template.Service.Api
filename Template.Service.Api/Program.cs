@@ -53,27 +53,27 @@ builder.Services.AddSwaggerGen(options =>
         AppContext.BaseDirectory,
         xmlDocumentationFile));
 
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Name = "Authorization",
-        Type = SecuritySchemeType.Http,
-        Scheme = "bearer",
-        BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Description = "Enter a Keycloak access token."
-    });
+    //options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    //{
+    //    Name = "Authorization",
+    //    Type = SecuritySchemeType.Http,
+    //    Scheme = "bearer",
+    //    BearerFormat = "JWT",
+    //    In = ParameterLocation.Header,
+    //    Description = "Enter a Keycloak access token."
+    //});
 
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        [new OpenApiSecurityScheme
-        {
-            Reference = new OpenApiReference
-            {
-                Type = ReferenceType.SecurityScheme,
-                Id = "Bearer"
-            }
-        }] = Array.Empty<string>()
-    });
+    //options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    //{
+    //    [new OpenApiSecurityScheme
+    //    {
+    //        Reference = new OpenApiReference
+    //        {
+    //            Type = ReferenceType.SecurityScheme,
+    //            Id = "Bearer"
+    //        }
+    //    }] = Array.Empty<string>()
+    //});
 });
 
 //chose Autofac
@@ -99,9 +99,9 @@ app.UseApplicationInsightsCorrelationId();
 
 app.UseHttpsRedirection();
 
-app.UseAuthentication();
+//app.UseAuthentication();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapGet("/", () => Results.Ok(new
 {

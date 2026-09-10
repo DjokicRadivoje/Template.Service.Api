@@ -83,14 +83,14 @@ public static class DependencyInjectionConfig
 
         if (string.IsNullOrWhiteSpace(clientId))
         {
-            throw new InvalidOperationException(
-                $"Configuration value '{sectionName}:ClientId' is required.");
+            //throw new InvalidOperationException(
+            //    $"Configuration value '{sectionName}:ClientId' is required.");
         }
 
         if (string.IsNullOrWhiteSpace(clientSecret))
         {
-            throw new InvalidOperationException(
-                $"Configuration value '{sectionName}:ClientSecret' is required and must come from a secret provider.");
+            //throw new InvalidOperationException(
+            //    $"Configuration value '{sectionName}:ClientSecret' is required and must come from a secret provider.");
         }
 
         var refreshBeforeExpirySeconds =
